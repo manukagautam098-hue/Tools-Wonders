@@ -948,8 +948,8 @@
                 <div class="footer-links">
                     <a href="#home" class="footer-link">Home</a>
                     <a href="#tools" class="footer-link">All Tools</a>
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms-of-use.html" class="footer-link">Terms of Use</a>
                 </div>
             </div>
         </div>
@@ -1012,7 +1012,7 @@
             // SEO & Marketing Tools
             "Keyword Density Checker": "🔍",
             "Meta Tag Analyzer": "🏷️",
-            "Word Counter": "📝",
+            "SEO Word Counter": "📝",
             
             // Utility Tools
             "QR Code Generator & Scanner": "📱",
@@ -1023,74 +1023,74 @@
             "Random Number / Password Generator": "🎲"
         };
 
-        // All tools data
+        // All tools data with working links
         const toolsData = {
             imageTools: [
-                { name: "Image Converter", desc: "Convert images between JPG, PNG, WebP, and more formats." },
-                { name: "Image Compressor", desc: "Reduce image file size without losing quality." },
-                { name: "Image Resizer", desc: "Resize images to specific dimensions while maintaining aspect ratio." },
-                { name: "Image Cropper", desc: "Crop images to remove unwanted areas or focus on specific parts." },
-                { name: "Image to Text (OCR)", desc: "Extract text from images using optical character recognition." },
-                { name: "Image Rotator / Flipper", desc: "Rotate or flip images horizontally or vertically." }
+                { name: "Image Converter", desc: "Convert images between JPG, PNG, WebP, and more formats.", link: "image-converter.html" },
+                { name: "Image Compressor", desc: "Reduce image file size without losing quality.", link: "image-compressor.html" },
+                { name: "Image Resizer", desc: "Resize images to specific dimensions while maintaining aspect ratio.", link: "image-resizer.html" },
+                { name: "Image Cropper", desc: "Crop images to remove unwanted areas or focus on specific parts.", link: "image-cropper.html" },
+                { name: "Image to Text (OCR)", desc: "Extract text from images using optical character recognition.", link: "image-to-text.html" },
+                { name: "Image Rotator / Flipper", desc: "Rotate or flip images horizontally or vertically.", link: "image-rotator.html" }
             ],
             documentTools: [
-                { name: "PDF to Word / Word to PDF", desc: "Convert PDF files to Word documents and vice versa." },
-                { name: "PDF Compressor", desc: "Reduce PDF file size for easier sharing and storage." },
-                { name: "PDF Merger & Splitter", desc: "Combine multiple PDFs or split large PDFs into smaller ones." },
-                { name: "Document Converter", desc: "Convert between various document formats like DOC, DOCX, TXT, etc." },
-                { name: "PDF Lock / Unlock", desc: "Add password protection to PDFs or remove it if you have the password." },
-                { name: "eSign PDF", desc: "Add electronic signatures to PDF documents securely." }
+                { name: "PDF to Word / Word to PDF", desc: "Convert PDF files to Word documents and vice versa.", link: "pdf-word-converter.html" },
+                { name: "PDF Compressor", desc: "Reduce PDF file size for easier sharing and storage.", link: "pdf-compressor.html" },
+                { name: "PDF Merger & Splitter", desc: "Combine multiple PDFs or split large PDFs into smaller ones.", link: "pdf-merger-splitter.html" },
+                { name: "Document Converter", desc: "Convert between various document formats like DOC, DOCX, TXT, etc.", link: "document-converter.html" },
+                { name: "PDF Lock / Unlock", desc: "Add password protection to PDFs or remove it if you have the password.", link: "pdf-lock-unlock.html" },
+                { name: "eSign PDF", desc: "Add electronic signatures to PDF documents securely.", link: "esign-pdf.html" }
             ],
             calculatorTools: [
-                { name: "Scientific Calculator", desc: "Advanced calculator with scientific functions and graphing." },
-                { name: "Age Calculator", desc: "Calculate exact age in years, months, and days." },
-                { name: "BMI Calculator", desc: "Calculate Body Mass Index based on height and weight." },
-                { name: "Loan EMI Calculator", desc: "Calculate Equated Monthly Installment for loans." },
-                { name: "GST Calculator", desc: "Calculate Goods and Services Tax amounts." },
-                { name: "Currency Converter", desc: "Convert between world currencies with live exchange rates." }
+                { name: "Scientific Calculator", desc: "Advanced calculator with scientific functions and graphing.", link: "scientific-calculator.html" },
+                { name: "Age Calculator", desc: "Calculate exact age in years, months, and days.", link: "age-calculator.html" },
+                { name: "BMI Calculator", desc: "Calculate Body Mass Index based on height and weight.", link: "bmi-calculator.html" },
+                { name: "Loan EMI Calculator", desc: "Calculate Equated Monthly Installment for loans.", link: "loan-emi-calculator.html" },
+                { name: "GST Calculator", desc: "Calculate Goods and Services Tax amounts.", link: "gst-calculator.html" },
+                { name: "Currency Converter", desc: "Convert between world currencies with live exchange rates.", link: "currency-converter.html" }
             ],
             textTools: [
-                { name: "Text Case Converter", desc: "Change text case to uppercase, lowercase, title case, etc." },
-                { name: "Word & Character Counter", desc: "Count words, characters, sentences, and paragraphs." },
-                { name: "Remove Duplicate Lines", desc: "Remove duplicate lines from text while keeping unique ones." },
-                { name: "Text Sorter", desc: "Sort lines of text alphabetically or numerically." },
-                { name: "Text Reverser", desc: "Reverse text characters, words, or lines." },
-                { name: "Text Encryptor / Decryptor", desc: "Encrypt and decrypt text using various algorithms." }
+                { name: "Text Case Converter", desc: "Change text case to uppercase, lowercase, title case, etc.", link: "text-case-converter.html" },
+                { name: "Word & Character Counter", desc: "Count words, characters, sentences, and paragraphs.", link: "word-character-counter.html" },
+                { name: "Remove Duplicate Lines", desc: "Remove duplicate lines from text while keeping unique ones.", link: "remove-duplicate-lines.html" },
+                { name: "Text Sorter", desc: "Sort lines of text alphabetically or numerically.", link: "text-sorter.html" },
+                { name: "Text Reverser", desc: "Reverse text characters, words, or lines.", link: "text-reverser.html" },
+                { name: "Text Encryptor / Decryptor", desc: "Encrypt and decrypt text using various algorithms.", link: "text-encryptor-decryptor.html" }
             ],
             webTools: [
-                { name: "HTML / CSS / JS Minifier", desc: "Minify HTML, CSS, and JavaScript code for faster loading." },
-                { name: "JSON Formatter & Validator", desc: "Format and validate JSON data with syntax highlighting." },
-                { name: "Base64 Encoder / Decoder", desc: "Encode and decode data to/from Base64 format." },
-                { name: "URL Encoder / Decoder", desc: "Encode and decode URL components for safe transmission." },
-                { name: "Color Picker & Converter", desc: "Pick colors and convert between HEX, RGB, HSL, etc." },
-                { name: "Regex Tester", desc: "Test regular expressions with live matching and highlighting." }
+                { name: "HTML / CSS / JS Minifier", desc: "Minify HTML, CSS, and JavaScript code for faster loading.", link: "html-css-js-minifier.html" },
+                { name: "JSON Formatter & Validator", desc: "Format and validate JSON data with syntax highlighting.", link: "json-formatter-validator.html" },
+                { name: "Base64 Encoder / Decoder", desc: "Encode and decode data to/from Base64 format.", link: "base64-encoder-decoder.html" },
+                { name: "URL Encoder / Decoder", desc: "Encode and decode URL components for safe transmission.", link: "url-encoder-decoder.html" },
+                { name: "Color Picker & Converter", desc: "Pick colors and convert between HEX, RGB, HSL, etc.", link: "color-picker-converter.html" },
+                { name: "Regex Tester", desc: "Test regular expressions with live matching and highlighting.", link: "regex-tester.html" }
             ],
             colorTools: [
-                { name: "Color Picker from Image", desc: "Extract colors from uploaded images." },
-                { name: "HEX to RGB Converter", desc: "Convert HEX color codes to RGB values and vice versa." },
-                { name: "Gradient Generator", desc: "Create beautiful CSS gradients with custom colors." },
-                { name: "Contrast Checker", desc: "Check color contrast ratios for accessibility compliance." },
-                { name: "Palette Generator", desc: "Generate harmonious color palettes for your projects." },
-                { name: "Color Blindness Simulator", desc: "Simulate how colors appear to people with color blindness." }
+                { name: "Color Picker from Image", desc: "Extract colors from uploaded images.", link: "color-picker-from-image.html" },
+                { name: "HEX to RGB Converter", desc: "Convert HEX color codes to RGB values and vice versa.", link: "hex-to-rgb-converter.html" },
+                { name: "Gradient Generator", desc: "Create beautiful CSS gradients with custom colors.", link: "gradient-generator.html" },
+                { name: "Contrast Checker", desc: "Check color contrast ratios for accessibility compliance.", link: "contrast-checker.html" },
+                { name: "Palette Generator", desc: "Generate harmonious color palettes for your projects.", link: "palette-generator.html" },
+                { name: "Color Blindness Simulator", desc: "Simulate how colors appear to people with color blindness.", link: "color-blindness-simulator.html" }
             ],
             seoTools: [
-                { name: "Keyword Density Checker", desc: "Analyze keyword density and frequency in text." },
-                { name: "Meta Tag Analyzer", desc: "Check and analyze meta tags for SEO optimization." },
-                { name: "Word Counter", desc: "Count words, characters, and reading time for content." }
+                { name: "Keyword Density Checker", desc: "Analyze keyword density and frequency in text.", link: "keyword-density-checker.html" },
+                { name: "Meta Tag Analyzer", desc: "Check and analyze meta tags for SEO optimization.", link: "meta-tag-analyzer.html" },
+                { name: "SEO Word Counter", desc: "Count words, characters, and reading time for content.", link: "seo-word-counter.html" }
             ],
             utilityTools: [
-                { name: "QR Code Generator & Scanner", desc: "Create QR codes and scan them with your camera." },
-                { name: "Barcode Generator", desc: "Generate barcodes in various formats for products." },
-                { name: "UUID Generator", desc: "Generate unique identifiers for databases and applications." },
-                { name: "Unit Converter", desc: "Convert between different units of measurement." },
-                { name: "Time Zone Converter", desc: "Convert time between different time zones worldwide." },
-                { name: "Random Number / Password Generator", desc: "Generate secure random numbers and passwords." }
+                { name: "QR Code Generator & Scanner", desc: "Create QR codes and scan them with your camera.", link: "qr-code-generator.html" },
+                { name: "Barcode Generator", desc: "Generate barcodes in various formats for products.", link: "barcode-generator.html" },
+                { name: "UUID Generator", desc: "Generate unique identifiers for databases and applications.", link: "uuid-generator.html" },
+                { name: "Unit Converter", desc: "Convert between different units of measurement.", link: "unit-converter.html" },
+                { name: "Time Zone Converter", desc: "Convert time between different time zones worldwide.", link: "time-zone-converter.html" },
+                { name: "Random Number / Password Generator", desc: "Generate secure random numbers and passwords.", link: "random-password-generator.html" }
             ]
         };
 
         // AI Search Intent Mapping
         const searchIntents = {
-            "compress": ["Image Compressor", "PDF Compressor", "File Compressor"],
+            "compress": ["Image Compressor", "PDF Compressor"],
             "photo": ["Image Compressor", "Image Resizer", "Image Cropper", "Image Converter"],
             "image": ["Image Compressor", "Image Resizer", "Image Cropper", "Image Converter", "Image to Text (OCR)"],
             "pdf": ["PDF to Word / Word to PDF", "PDF Compressor", "PDF Merger & Splitter", "PDF Lock / Unlock", "eSign PDF"],
@@ -1109,7 +1109,7 @@
             "url": ["URL Encoder / Decoder"],
             "color": ["Color Picker & Converter", "Color Picker from Image", "HEX to RGB Converter", "Gradient Generator"],
             "gradient": ["Gradient Generator"],
-            "seo": ["Keyword Density Checker", "Meta Tag Analyzer", "Word Counter"],
+            "seo": ["Keyword Density Checker", "Meta Tag Analyzer", "SEO Word Counter"],
             "keyword": ["Keyword Density Checker"],
             "meta": ["Meta Tag Analyzer"],
             "qr": ["QR Code Generator & Scanner"],
@@ -1147,7 +1147,7 @@
 
         // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
-            // Populate all tool sections with icons
+            // Populate all tool sections with icons and working links
             populateToolSections();
             
             // Set up event listeners
@@ -1160,7 +1160,7 @@
             addAIMessage(aiResponses.greetings[0]);
         });
 
-        // Populate tool sections with cards including icons
+        // Populate tool sections with cards including icons and working links
         function populateToolSections() {
             for (const [sectionId, tools] of Object.entries(toolsData)) {
                 const container = document.getElementById(sectionId.replace('Tools', '-tools').toLowerCase());
@@ -1173,19 +1173,11 @@
                     toolCard.innerHTML = `
                         <h3><span class="tool-icon">${toolIcons[tool.name] || "🔧"}</span> ${tool.name}</h3>
                         <p class="tool-description">${tool.desc}</p>
-                        <button class="btn btn-small use-tool-btn" data-tool="${tool.name}">Use Tool</button>
+                        <a href="${tool.link}" class="btn btn-small use-tool-btn">Use Tool</a>
                     `;
                     container.appendChild(toolCard);
                 });
             }
-            
-            // Add event listeners to "Use Tool" buttons
-            document.querySelectorAll('.use-tool-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const toolName = this.getAttribute('data-tool');
-                    showToolModal(toolName);
-                });
-            });
         }
 
         // Set up event listeners
@@ -1311,9 +1303,8 @@
                     `;
                     
                     suggestionDiv.addEventListener('click', function() {
-                        scrollToToolAndHighlight(tool.name);
-                        addUserMessage(`I want to use ${tool.name}`);
-                        addAIMessage(`Opening ${tool.name} for you...`);
+                        // Navigate directly to the tool
+                        window.location.href = tool.link;
                     });
                     
                     messageDiv.appendChild(suggestionDiv);
@@ -1376,7 +1367,7 @@
             // Check for exact tool name matches
             Object.values(toolsData).flat().forEach(tool => {
                 if (tool.name.toLowerCase().includes(lowerQuery)) {
-                    matchedTools.push({...tool, matchType: 'name'});
+                    matchedTools.push(tool);
                 }
             });
             
@@ -1387,7 +1378,7 @@
                         // Find the tool object
                         Object.values(toolsData).flat().forEach(tool => {
                             if (tool.name === toolName && !matchedTools.some(t => t.name === toolName)) {
-                                matchedTools.push({...tool, matchType: 'intent'});
+                                matchedTools.push(tool);
                             }
                         });
                     });
@@ -1398,7 +1389,7 @@
             if (matchedTools.length === 0) {
                 Object.values(toolsData).flat().forEach(tool => {
                     if (tool.desc.toLowerCase().includes(lowerQuery)) {
-                        matchedTools.push({...tool, matchType: 'description'});
+                        matchedTools.push(tool);
                     }
                 });
             }
@@ -1456,15 +1447,14 @@
                         <h4 style="margin-bottom: 5px;">${tool.name}</h4>
                         <p style="font-size: 0.9rem; color: var(--text-light);">${tool.desc}</p>
                         <span style="font-size: 0.8rem; color: var(--primary-blue); margin-top: 5px; display: block;">
-                            ${tool.matchType === 'name' ? '🔍 Name match' : tool.matchType === 'intent' ? '🤖 AI intent match' : '📝 Description match'}
+                            Click to open tool
                         </span>
                     </div>
                 `;
                 
                 resultItem.addEventListener('click', function() {
-                    scrollToToolAndHighlight(tool.name);
-                    searchResults.style.display = 'none';
-                    searchInput.value = '';
+                    // Navigate directly to the tool
+                    window.location.href = tool.link;
                 });
                 
                 searchResults.appendChild(resultItem);
@@ -1472,42 +1462,6 @@
             
             // Add keyboard navigation
             addSearchKeyboardNavigation();
-        }
-
-        // Scroll to tool and highlight it
-        function scrollToToolAndHighlight(toolName) {
-            // Find the tool card
-            const toolCards = document.querySelectorAll('.tool-card');
-            let targetCard = null;
-            let targetSection = null;
-            
-            toolCards.forEach(card => {
-                if (card.getAttribute('data-tool-name') === toolName.toLowerCase()) {
-                    targetCard = card;
-                    targetSection = card.closest('.tools-section');
-                }
-            });
-            
-            if (targetCard && targetSection) {
-                // Scroll to the section
-                window.scrollTo({
-                    top: targetSection.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-                
-                // Highlight the card
-                targetCard.classList.add('highlighted');
-                
-                // Remove highlight after 3 seconds
-                setTimeout(() => {
-                    targetCard.classList.remove('highlighted');
-                }, 3000);
-                
-                // Add a message in the chat if it's open
-                if (aiHelperPanel.style.display === 'flex') {
-                    addAIMessage(`I've highlighted the ${toolName} tool for you.`);
-                }
-            }
         }
 
         // Add keyboard navigation for search results
@@ -1544,65 +1498,6 @@
             });
         }
 
-        // Show tool modal (simulated)
-        function showToolModal(toolName) {
-            // In a real implementation, this would open the actual tool
-            // For this demo, we'll show a notification
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: white;
-                padding: 2rem;
-                border-radius: var(--radius);
-                box-shadow: var(--shadow-lg);
-                z-index: 2000;
-                max-width: 90%;
-                width: 400px;
-                text-align: center;
-            `;
-            
-            modal.innerHTML = `
-                <h3>${toolIcons[toolName] || "🔧"} ${toolName}</h3>
-                <p>This tool would open in a real implementation.</p>
-                <p style="font-size: 0.9rem; margin: 1rem 0; color: var(--dark-gray);">
-                    For demo purposes, this is a simulation. In the full version, you would be able to use this tool directly.
-                </p>
-                <div style="display: flex; gap: 10px; justify-content: center; margin-top: 1.5rem;">
-                    <button id="closeModal" class="btn btn-small">Close</button>
-                    <button class="btn btn-small btn-outline">Learn More</button>
-                </div>
-            `;
-            
-            // Add overlay
-            const overlay = document.createElement('div');
-            overlay.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 1999;
-            `;
-            
-            document.body.appendChild(overlay);
-            document.body.appendChild(modal);
-            
-            // Close modal functionality
-            document.getElementById('closeModal').addEventListener('click', function() {
-                document.body.removeChild(modal);
-                document.body.removeChild(overlay);
-            });
-            
-            overlay.addEventListener('click', function() {
-                document.body.removeChild(modal);
-                document.body.removeChild(overlay);
-            });
-        }
-
         // Animate sections on scroll
         function animateSectionsOnScroll() {
             const observerOptions = {
@@ -1625,4 +1520,4 @@
         }
     </script>
 </body>
-                </html>
+    </html>
